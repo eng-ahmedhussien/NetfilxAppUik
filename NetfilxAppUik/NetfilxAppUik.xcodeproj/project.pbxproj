@@ -20,6 +20,7 @@
 		6B613A042B750EB300D90982 /* NetfilxAppUikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613A032B750EB300D90982 /* NetfilxAppUikTests.swift */; };
 		6B613A0E2B750EB300D90982 /* NetfilxAppUikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613A0D2B750EB300D90982 /* NetfilxAppUikUITests.swift */; };
 		6B613A102B750EB300D90982 /* NetfilxAppUikUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B613A0F2B750EB300D90982 /* NetfilxAppUikUITestsLaunchTests.swift */; };
+		6B88A8002BA7B73B0064616F /* HeroHeaderUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B88A7FF2BA7B73B0064616F /* HeroHeaderUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6B613A092B750EB300D90982 /* NetfilxAppUikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetfilxAppUikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B613A0D2B750EB300D90982 /* NetfilxAppUikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfilxAppUikUITests.swift; sourceTree = "<group>"; };
 		6B613A0F2B750EB300D90982 /* NetfilxAppUikUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetfilxAppUikUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B88A7FF2BA7B73B0064616F /* HeroHeaderUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHeaderUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				6B36F1B02B9D17CD0088186D /* CollectionViewTableViewCell.swift */,
+				6B88A7FF2BA7B73B0064616F /* HeroHeaderUIView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				6B36F1AC2B9D0C8E0088186D /* SearchVC.swift in Sources */,
 				6B36F1AE2B9D0CA40088186D /* DownloadVC.swift in Sources */,
 				6B36F1B12B9D17CD0088186D /* CollectionViewTableViewCell.swift in Sources */,
+				6B88A8002BA7B73B0064616F /* HeroHeaderUIView.swift in Sources */,
 				6B6139F12B750EB200D90982 /* MainTabBarVC.swift in Sources */,
 				6B36F1AA2B9D0C780088186D /* UpComingVC.swift in Sources */,
 				6B36F1A82B9D0C510088186D /* HomeVC.swift in Sources */,

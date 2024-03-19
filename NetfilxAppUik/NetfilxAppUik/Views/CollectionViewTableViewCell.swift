@@ -22,7 +22,7 @@ class CollectionViewTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(collectionView)
+        contentView.addSubview(collectionView)//The content view of the cell object.
         //collectioview
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -49,7 +49,10 @@ extension CollectionViewTableViewCell: UICollectionViewDelegate, UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
         cell.backgroundColor = .blue
         return cell
-    }
-    
-    
+    } 
+}
+
+
+#Preview{
+    CollectionViewTableViewCell()
 }
