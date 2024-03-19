@@ -10,17 +10,18 @@ import UIKit
 class HomeVC: UIViewController {
     private let homeFeedTable: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
-        table.register(TableViewCell.self, forCellReuseIdentifier: TableViewCell.identifier)
+        table.register(CollectionViewTableViewCell.self, forCellReuseIdentifier: CollectionViewTableViewCell.identifier)
         return table
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .gray
+       // view.backgroundColor = .gray
         view.addSubview(homeFeedTable)
-        homeFeedTable.tableHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        homeFeedTable.tableHeaderView =  HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
     }
+    ///It gets called automatically by the system whenever the layout of the view controller's view needs to be adjusted
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
@@ -32,7 +33,7 @@ extension HomeVC: UITableViewDelegate,UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as? TableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: CollectionViewTableViewCell.identifier, for: indexPath) as? CollectionViewTableViewCell else {
             return UITableViewCell()
         }
            
@@ -47,4 +48,8 @@ extension HomeVC: UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
+}
+
+#Preview{
+    HomeVC()
 }

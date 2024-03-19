@@ -26,3 +26,8 @@ class DownloadVC: UIViewController {
     */
 
 }
+
+
+#Preview{
+    DownloadVC()
+}
