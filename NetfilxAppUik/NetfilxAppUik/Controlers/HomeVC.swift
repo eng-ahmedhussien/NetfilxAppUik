@@ -17,7 +17,14 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
        // view.backgroundColor = .gray
         view.addSubview(homeFeedTable)
-        homeFeedTable.tableHeaderView =  HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 400))
+        homeFeedTable.tableHeaderView = HeroHeaderUIView(
+            frame: CGRect(
+                x: 0,
+                y: 0,
+                width: view.bounds.width,
+                height: 400
+            )
+        )
         homeFeedTable.delegate = self
         homeFeedTable.dataSource = self
     }
@@ -46,7 +53,7 @@ extension HomeVC: UITableViewDelegate,UITableViewDataSource {
         return 40
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 5
+        return 2
     }
 }
 

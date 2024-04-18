@@ -16,10 +16,20 @@ class HeroHeaderUIView: UIView {
         imageView.image = UIImage(named: "8")
         return imageView
     }()
+    private let playButton: UIButton = {
+      let button = UIButton()
+        button.setTitle("play", for: .normal)
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.borderWidth = 2
+        button.translatesAutoresizingMaskIntoConstraints = false
+      return button
+    }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(heroImageView)
+        addSubview(playButton)
+        applyConstraint()
     }
     
     required init?(coder: NSCoder) {
@@ -29,6 +39,12 @@ class HeroHeaderUIView: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         heroImageView.frame = bounds
+    }
+    
+    private func applyConstraint(){
+        let constraint = [playButton.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -25),
+                          playButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20)]
+        NSLayoutConstraint.activate(constraint)
     }
     
     
