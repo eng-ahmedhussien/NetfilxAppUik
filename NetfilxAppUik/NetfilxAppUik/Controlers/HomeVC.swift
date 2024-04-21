@@ -15,7 +15,6 @@ class HomeVC: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-       // view.backgroundColor = .gray
         view.addSubview(homeFeedTable)
         homeFeedTable.tableHeaderView = HeroHeaderUIView(
             frame: CGRect(
